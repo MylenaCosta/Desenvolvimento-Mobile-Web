@@ -1,0 +1,26 @@
+<html> 
+<head> 
+	<meta charset="utf-8">
+	<title>É um Palíndromo</title> 
+	<script type="text/javascript"> 
+		function Palindromo(palavra){ 
+			var palavraInversa = palavra.split('').reverse().join(''); 
+			return palavraInversa == palavra; 
+		}
+		function isPalindromo(palavra){ 
+palavra = palavra.toLowerCase(); //converte tudo para minusculo 
+palavra = palavra.replace(/[^a-zA-Z]/gi, '');
+if (palavra=="palíndromo"){ 
+	return true; 
+}else{ 
+	return false; 
+} 
+} 
+</script> 
+</head> 
+<body onload="javascript:if (Palindromo(window.prompt())==true) 
+{alert('É um palindromo')}else{alert('NÃo e um palíndromo')}"> 
+
+
+</body> 
+</html>
